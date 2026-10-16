@@ -1,0 +1,59 @@
+{
+  "theme": "Seasons on Paper — Traditional Paper Arts Exhibition",
+  "categories": [
+    "C",
+    "A"
+  ],
+  "canvas": "portrait A4, 210:297",
+  "style": "cultural-editorial",
+  "layout": "layered-depth",
+  "text_mode": "integrated",
+  "pairings": [
+    7,
+    1
+  ],
+  "design": {
+    "motif": "A sheet of paper transforming from flat cuts into a three-dimensional structure",
+    "theme_basis": "Papercutting, folding, and paper sculpture explore changes in paper form",
+    "subject": "A conceptual paper-art structure with recognizable cuts and creases",
+    "spatial_structure": "Flat cut paper behind, folded planes in the middle, sculptural paper in front, in one continuous space",
+    "title_relationship": "The horizontal title enters the upper planar paper surface; text-image relationships follow the active profile",
+    "light_material": "Side lighting, fine paper fibers, soft local shadows, one consistent light direction",
+    "information_region": "Quiet lower paper surface, two left-aligned information groups; margins and gaps follow the active profile"
+  },
+  "copy_items": [
+    {
+      "id": "title",
+      "role": "title",
+      "text": "Seasons on Paper — Traditional Paper Arts Exhibition",
+      "region": "Upper paper surface"
+    },
+    {
+      "id": "dates",
+      "role": "dates",
+      "text": "1–15 November 2026",
+      "region": "Lower information group"
+    }
+  ],
+  "typography_profile": "design-free-v1",
+  "reference_mode": "direct",
+  "references": [
+    {
+      "path": "REPLACE_WITH_ABSOLUTE_PATH_TO_INSPECTED_STYLE_IMAGE",
+      "role": "style",
+      "definition_id": "cultural-editorial",
+      "inspected": false,
+      "borrowed_features": []
+    },
+    {
+      "path": "REPLACE_WITH_ABSOLUTE_PATH_TO_INSPECTED_LAYOUT_IMAGE",
+      "role": "layout",
+      "definition_id": "layered-depth",
+      "inspected": false,
+      "borrowed_features": []
+    }
+  ],
+  "language": "en",
+  "stage": "generate",
+  "visual_route": "general"
+}

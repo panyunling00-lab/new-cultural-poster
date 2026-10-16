@@ -1,0 +1,8 @@
+{
+  "default_profile": "design-free-v1",
+  "profiles": {
+    "design-free-v1": "typography-design-free.json",
+    "small-type-refined-v1": "typography-small-type.json"
+  },
+  "note": "Pointer only. Numeric values live in each profile file. scripts/typography_policy.py resolves the active profile from brief.typography_profile, falling back to default_profile."
+}

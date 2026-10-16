@@ -1,0 +1,59 @@
+{
+  "theme": "纸上春秋——传统纸艺文化展",
+  "categories": [
+    "C",
+    "A"
+  ],
+  "canvas": "portrait A4, 210:297",
+  "style": "cultural-editorial",
+  "layout": "layered-depth",
+  "text_mode": "integrated",
+  "pairings": [
+    7,
+    1
+  ],
+  "design": {
+    "motif": "一张纸从平面切割转化为立体结构",
+    "theme_basis": "剪纸、折纸和纸雕共同体现纸的形态变化",
+    "subject": "具有可辨识切口和折痕的概念纸艺结构",
+    "spatial_structure": "后景平面切纸、中景折叠、前景立体纸雕形成连续空间",
+    "title_relationship": "横排小标题进入上部平整纸面，图形与标题的关系按当前排版档位执行",
+    "light_material": "侧光、细纸纤维、柔和局部投影，同一光照方向",
+    "information_region": "下侧安静纸面，两组信息左对齐，安全区与分组间距按当前排版档位执行"
+  },
+  "copy_items": [
+    {
+      "id": "title",
+      "role": "title",
+      "text": "纸上春秋——传统纸艺文化展",
+      "region": "纸面上部"
+    },
+    {
+      "id": "dates",
+      "role": "dates",
+      "text": "2026年11月1日至11月15日",
+      "region": "下侧信息组"
+    }
+  ],
+  "typography_profile": "design-free-v1",
+  "reference_mode": "direct",
+  "references": [
+    {
+      "path": "请替换为已查看的风格参考图片绝对路径",
+      "role": "style",
+      "definition_id": "cultural-editorial",
+      "inspected": false,
+      "borrowed_features": []
+    },
+    {
+      "path": "请替换为已查看的构图参考图片绝对路径",
+      "role": "layout",
+      "definition_id": "layered-depth",
+      "inspected": false,
+      "borrowed_features": []
+    }
+  ],
+  "language": "zh",
+  "stage": "generate",
+  "visual_route": "general"
+}
