@@ -8,21 +8,40 @@ An AI assistant skill for cultural exhibitions, performances, heritage crafts, w
 
 | Version · 版本 | Skill entry · 主文件 | Guide · 使用说明 |
 |---|---|---|
-| 中文版 · Chinese | [SKILL.md](SKILL.md) | [English overview of the Chinese package](README-zh-package.md) |
+| 中文版 · Chinese | [new-cultural-zh/SKILL.md](new-cultural-zh/SKILL.md) | [English overview of the Chinese package](new-cultural-zh/README.md) |
 | English · 英文版 | [new-cultural-en/SKILL.md](new-cultural-en/SKILL.md) | [English README](new-cultural-en/README.md) · [Introduction](new-cultural-en/INTRODUCTION.md) |
 
-The **Chinese skill is at the repository root**. The **English skill is self-contained in `new-cultural-en/`**. Both include their own scripts, references, templates, and assets. Ordinary product advertising is outside their scope.
+Both language versions are self-contained in separate folders: **`new-cultural-zh/`** for Chinese and **`new-cultural-en/`** for English. Each includes its own scripts, references, templates, and assets. Ordinary product advertising is outside their scope.
 
-**中文版位于仓库根目录，英文版位于独立的 `new-cultural-en/` 文件夹。** 两个版本均包含完整的脚本、参考文档、模板和素材。普通商品广告不在适用范围内。
+**中文版位于 `new-cultural-zh/`，英文版位于 `new-cultural-en/`，两个文件夹在仓库根目录并列。** 两个版本均包含完整的脚本、参考文档、模板和素材。普通商品广告不在适用范围内。
+
+```text
+new-cultural-poster/
+├── README.md
+├── new-cultural-zh/
+│   ├── SKILL.md
+│   ├── README.md
+│   ├── scripts/
+│   ├── references/
+│   ├── templates/
+│   └── assets/
+└── new-cultural-en/
+    ├── SKILL.md
+    ├── README.md
+    ├── scripts/
+    ├── references/
+    ├── templates/
+    └── assets/
+```
 
 ## Download and use · 下载与使用
 
 1. [Download the repository ZIP](https://github.com/panyunling00-lab/new-cultural-poster/archive/refs/heads/main.zip), or use **Code → Download ZIP**.
-2. Extract it. For Chinese, use the root `SKILL.md` together with root `scripts/`, `references/`, `assets/`, `templates/`, and `cultural.txt`, placing them in a folder named `new-cultural-zh`. For English, use the entire `new-cultural-en/` folder.
+2. Extract it. For Chinese, use the entire `new-cultural-zh/` folder. For English, use the entire `new-cultural-en/` folder. No manual rearrangement is needed.
 3. Keep each skill's directory structure intact. Configure skill discovery according to your AI assistant environment. Reading `SKILL.md` alone does not supply the image library or executable helpers.
 4. Provide an event brief, exact required copy, confirmed canvas ratio, and source assets. The skill begins with copy confirmation, then typography selection, then three composition drafts.
 
-下载 ZIP 并解压后：中文版请将根目录的 `SKILL.md`、`scripts/`、`references/`、`assets/`、`templates/` 和 `cultural.txt` 放入 `new-cultural-zh` 文件夹；英文版直接使用完整的 `new-cultural-en/` 文件夹。保留目录结构，并按所用 AI 助手的方式加载 skill。提供活动资料、完整文案、明确画幅比例与原始素材后，按流程确认文案、选择文字风格并比较三张构图草案。
+下载 ZIP 并解压后，直接选择完整的 `new-cultural-zh/` 或 `new-cultural-en/` 文件夹，无需重新整理文件。保留目录结构，并按所用 AI 助手的方式加载 skill。提供活动资料、完整文案、明确画幅比例与原始素材后，按流程确认文案、选择文字风格并比较三张构图草案。
 
 ## Included · 内容
 

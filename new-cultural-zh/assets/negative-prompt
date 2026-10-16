@@ -1,0 +1,60 @@
+# Global negative prompt list — cultural event posters
+#
+# One rule per line, written as: <Chinese> | <English>
+# `scripts/build_prompt.py` reads this file and appends one language's half to
+# every image prompt (English by default; the Chinese half when the brief sets
+# "language": "zh"). Keep both halves faithful to each other — they are the
+# same rule, not a longer and a shorter version. Lines starting with # are
+# comments and are skipped. No "|" may appear inside a rule.
+#
+# Typography profiles: every rule here is profile-neutral and carries no
+# profile-specific number. The two profiles are design-free-v1
+# (assets/typography-design-free.json, the default) and small-type-refined-v1
+# (assets/typography-small-type.json); the brief selects one with
+# typography_profile. The profile-violation rule below applies to whichever
+# profile is active. The multi-panel rule is unconditional. The people rule is
+# conditional: it holds except for performing-arts (B), festival/carnival (E)
+# or market themes, or when the user's reference material contains only people;
+# scripts/build_prompt.py resolves this as people_policy and also injects the
+# matching positive directive into every image prompt.
+#
+# This file is byte-identical in the English and the Chinese skill packages: it
+# is one shared asset, not a translation pair.
+#
+# 每行一条规则，格式为：<中文> | <英文>。
+# `scripts/build_prompt.py` 读取本文件，并把其中一种语言的一半追加到每个生图提示词
+# （默认英文；当设计简报设置 "language": "zh" 时用中文）。两侧必须互相忠实——它们
+# 是同一条规则，而不是一长一短两个版本。以 # 开头的行为注释，会被跳过；规则内部
+# 不得出现 "|"。
+#
+# 排版档位：本清单全部档位中立，不含任何档位专属数字。两个档位为 design-free-v1
+# （assets/typography-design-free.json，默认档）与 small-type-refined-v1
+# （assets/typography-small-type.json）；设计简报通过 typography_profile 选择。
+# 下文的「违反当前排版档位」一条按当前档位生效。分格拼版一条为无条件全局规则；
+# 人物一条为条件规则——除演出（B）、节庆/嘉年华（E）、集市类主题，或用户参考素材
+# 仅含人物外成立；scripts/build_prompt.py 将其解析为 people_policy，并把对应的
+# 正向人物指令一并注入每个生图提示词。
+#
+# 本文件在英文包与中文包中逐字节相同：它是同一份共享资产，不是翻译对。
+编造未提供或未核实的活动名称、日期、地点、费用、嘉宾、参与方式、场次、票价、优惠、背书，或编造文化归属、历史来源、宗教含义、遗产身份、奖项与机构背书 | Invented or unverified event names, dates, venues, fees, guests, participation details, sessions, prices, discounts, endorsements, or invented cultural attribution, historical origins, religious meanings, heritage status, awards or institutional endorsements
+擅自改写必须原样呈现的正式名称与指定文案 | Unauthorized changes to mandatory official names or exact supplied copy
+未经提供或核实的电影节桂冠、奖项徽章、认证、“official selection”或“入围”字样 | Unsupplied or unverified film-festival laurels, award badges, certifications, "official selection" or "selected" wording
+真实品牌、真实赞助商或真实机构标识（任务提供并要求原样合成的除外） | Real brand marks, real sponsors or real institution logos (except assets the task supplies for unchanged compositing)
+擅自增加未要求的译文、宣传语、制作署名或填充文字 | Unrequested translations, slogans, production credits or filler copy
+把风格参考或概念性场景当作真实展品、活动现场、历史复原或主办方资产 | Style references or conceptual scenes presented as actual exhibits, event scenes, historical reconstructions or organizer assets
+伪文字、乱码、占位文案、装饰性假字母、错字漏字（含形近字）、多字或多余标点 | Pseudo-text, gibberish, placeholders, decorative fake letterforms, wrong (including look-alike), missing or extra characters and punctuation
+不可读的主标题，或变形到无法辨认、笔画粘连的字形 | Unreadable titles, or glyphs distorted beyond recognition with fused strokes
+违反当前排版档位的字号、字重、间距、边界或遮挡，含放大到主导整个画面的超大标题 | Type sizes, weights, spacing, bounds or occlusion violating the active typography profile, including oversized titles that dominate the whole image
+正文与信息区同核心图形重叠，缺少当前档位要求的避让间距 | Body text and information zones overlapping the core graphic without the clearance the active profile requires
+大面积密集文字块，或正文压在杂乱高细节区域上 | Large dense text blocks, or body copy laid over busy high-detail areas
+以删必需信息或不可读微字解决版面容量问题 | Solving layout capacity by dropping required information or using unreadable microtype
+重绘、改风格或重新生成用户提供的 logo、二维码与实拍照片，改变需保真作品、器物或照片的关键识别特征，或以生成近似物替代必需原始资产、遮挡或拉伸变形二维码 | Redrawing, restyling or regenerating user-supplied logos, QR codes or photographs, altering identifying features of fidelity-sensitive works, objects or photographs, or substituting generated approximations for required original assets and obscuring or stretching QR codes out of shape
+堆砌俗套国潮纹样、模板化“中国风”符号，或无关文化符号、错误时代地域混搭与无依据的纹样堆砌 | Piled-on clichéd guochao motifs, template "Chinese-style" symbols, unrelated cultural symbols, incorrect period or regional mixtures or unsupported motif piles
+与文案无关的装饰边框、花边、光斑、廉价金色渐变或立体浮雕效果 | Decorative borders, lace, lens flares, cheap gold gradients or embossed effects unrelated to the copy
+文字上的浮雕、描边或阴影，导致可读性下降 | Emboss, stroke or shadow on text that reduces readability
+多种高饱和色等面积冲撞，或把糖果色、荧光色用在传统文化主题上 | Equal-area clashes of saturated colors, or candy and fluorescent colors on traditional cultural themes
+超出“背景＋主色＋点缀”三个主要色彩角色之外的高饱和色 | Saturated colors beyond the three major roles of background, primary and optional accent
+水印、署名条、编造的制作名单，画框、桌面、手持等展示样机，或未要求的多海报拼图 | Watermarks, credit strips, invented production credits, presentation mockups such as frames, desks or hands, or unrequested multi-poster montages
+把竖版构图逻辑塞进横向画布：黑边、空白侧翼、堆叠的竖版栏 | Portrait composition logic forced into a landscape canvas: letterbox bars, empty side wings, stacked portrait columns
+除演出、节庆/嘉年华、集市类活动，或用户参考素材仅含人物外：不生成任何人物形象（真人、插画人物、人体剪影、手部特写、微型人物场景），也不用人物造型素材作主体；原始素材本身含人物且必须展示时不加篡改，先说明冲突并取得决定 | Except for performing-arts, festival/carnival or market events, or reference material containing only people: generate no human figures (real people, illustrated characters, human silhouettes, hand close-ups, miniature-figure scenes) and use no human-shaped asset as the subject; when a supplied asset itself contains people and must be shown, do not alter it — state the conflict and get a decision first
+默认排除分格拼版：自动四宫格、接触表、多海报拼贴，可见格子的多图拼版、九宫格、卡片墙、侧边上下分格细节图及分隔线拼贴；默认排除 modular-grid、split-horizontal、split-vertical，框景只允许单一连续窗口 | By default exclude multi-panel layouts: automatic 2x2 grids, contact sheets or poster montages, visible multi-panel grids, nine-grids, card walls, stacked side detail panels or divider-line collages; by default exclude modular-grid, split-horizontal and split-vertical, and allow only a single continuous window for frame-within-frame
