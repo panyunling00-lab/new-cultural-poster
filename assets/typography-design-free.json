@@ -1,0 +1,23 @@
+{
+  "id": "design-free-v1",
+  "renderer_title_short_side_ratio": 0.18,
+  "renderer_subtitle_short_side_ratio": 0.06,
+  "renderer_body_short_side_ratio": 0.04,
+  "safe_margin_x_ratio": 0,
+  "safe_margin_y_ratio": 0,
+  "text_padding_short_side_ratio": 0,
+  "default_min_font_px": 12,
+  "leading": {
+    "title": 1.1,
+    "subtitle": 1.25,
+    "body": 1.4
+  },
+  "layer_order": [
+    "background",
+    "graphics",
+    "text",
+    "foreground_masks",
+    "required_assets"
+  ],
+  "note": "Renderer starting values only; no design caps, role-ratio limits or required spacing. Layer order is a basic compositor plan, not a global restriction."
+}

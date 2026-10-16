@@ -1,0 +1,30 @@
+{
+  "id": "small-type-refined-v1",
+  "text_scale_weight": 0.35,
+  "title_base_font_short_side_ratio": 0.14,
+  "title_font_short_side_ratio_max": 0.055,
+  "title_block_target_ratio": 0.15,
+  "title_block_max_ratio": 0.2,
+  "subtitle_title_ratio": 0.45,
+  "subtitle_title_ratio_max": 0.5,
+  "body_title_ratio": 0.25,
+  "body_title_ratio_max": 0.3,
+  "safe_margin_x_ratio": 0.08,
+  "safe_margin_y_ratio": 0.08,
+  "text_padding_short_side_ratio": 0.02,
+  "subject_clearance_short_side_ratio": 0.04,
+  "negative_space_ratio_min": 0.3,
+  "text_block_area_ratio_max": 0.2,
+  "default_min_font_px": 12,
+  "leading": {
+    "title": 1.2,
+    "subtitle": 1.4,
+    "body": 1.6
+  },
+  "layer_order": [
+    "background",
+    "graphics",
+    "text",
+    "required_assets"
+  ]
+}
